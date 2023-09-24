@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-24T15:41:47" hostname="MacBook-Air-de-Benoit.local" time="0.018">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-24T15:59:38" hostname="MacBook-Air-de-Benoit.local" time="0.017">
   <properties/>
   <testcase name="Test Backstage Passes quality increase over time" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
   <testcase name="Test that quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that Aged Brie increases in quality over time" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that Sulfuras, being legendary, never loses quality" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
