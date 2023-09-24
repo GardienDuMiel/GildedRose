@@ -14,11 +14,9 @@ class GildedRose {
 
   public void updateQuality() {
     for (Item item : items) {
-      if (!item.name.equals(BRIE) && !item.name.equals(PASS)) {
-        if (!item.name.equals(SULFURAS)) {
-          if (item.quality > 0) {
-            item.quality = item.quality - 1;
-          }
+      if (!item.name.equals(BRIE) && !item.name.equals(PASS) && !item.name.equals(SULFURAS)) { 
+        if (item.quality > 0) {
+          item.quality = item.quality - 1;
         }
       } 
 
