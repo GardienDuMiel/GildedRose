@@ -15,7 +15,6 @@ class GildedRose {
   public void updateQuality() {
     for (Item item : items) {
      
-
       if (item.name.equals(BRIE)) {
         if (item.quality < 50) {
           item.quality = item.quality + 1;
@@ -24,7 +23,7 @@ class GildedRose {
         item.sellIn = item.sellIn - 1;
       }
 
-      if (item.name.equals(PASS)) {
+      else if (item.name.equals(PASS)) {
         if (item.quality < 50) {
           item.quality = item.quality + 1;
         }
@@ -49,7 +48,7 @@ class GildedRose {
 
       }
 
-      if (normalItem(item)) {
+      else if (normalItem(item)) {
         item.sellIn = item.sellIn - 1;
 
         if (item.quality > 0) {
@@ -60,7 +59,6 @@ class GildedRose {
           }
         }
       }
-      
     }
   }
 
