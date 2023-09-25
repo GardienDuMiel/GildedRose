@@ -55,11 +55,9 @@ class GildedRose {
           }
         }
 
-        if (!item.name.equals(BRIE)) {
-          if (item.name.equals(PASS)) {
-            item.quality = 0;
-          }
-        } 
+        if (item.name.equals(PASS)) {
+          item.quality = 0;
+        }
         
         if (item.name.equals(BRIE)) {
           if (item.quality < 50) {
