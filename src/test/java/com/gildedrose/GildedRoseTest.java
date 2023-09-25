@@ -104,5 +104,13 @@ class GildedRoseTest {
         assertEquals(0, backstagePasses.quality);
     }
 
+    @Test
+    @DisplayName("Test Conjured item quality degradation")
+    void testConjuredQualityDegradation() {
+        Item conjuredItem = new Item("Conjured Mana Cake", 5, 10); 
+        GildedRose app = new GildedRose(new Item[] {conjuredItem});
+        app.updateQuality();
+        assertEquals(8, conjuredItem.quality, "Conjured item quality degradation is incorrect");
+    }
 }
 
