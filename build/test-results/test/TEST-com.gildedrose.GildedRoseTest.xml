@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-25T06:19:51" hostname="MacBook-Air-de-Benoit.local" time="0.017">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-25T06:23:49" hostname="MacBook-Air-de-Benoit.local" time="0.019">
   <properties/>
-  <testcase name="Test Backstage Passes quality increase over time" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="Test Backstage Passes quality increase over time" classname="com.gildedrose.GildedRoseTest" time="0.013"/>
   <testcase name="Test that quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that Aged Brie increases in quality over time" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that Sulfuras, being legendary, never loses quality" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that quality is never negative" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that quality is never negative" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that quality degrades twice as fast after sellIn date" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
