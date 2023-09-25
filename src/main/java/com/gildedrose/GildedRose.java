@@ -55,7 +55,9 @@ class GildedRose {
               item.quality = item.quality - 1;
             }
           } 
-
+        }
+        
+        if (!item.name.equals(BRIE)) {
           if (item.name.equals(PASS)) {
             item.quality = 0;
           }
