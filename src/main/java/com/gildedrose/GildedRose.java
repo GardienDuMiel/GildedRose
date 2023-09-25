@@ -14,16 +14,24 @@ class GildedRose {
 
   public void updateQuality() {
     for (Item item : items) {
-      if (normalItem(item)) {
-        if (item.quality > 0) {
-          item.quality = item.quality - 1;
-        }
-      } 
+     
 
       if (item.name.equals(BRIE)) {
         if (item.quality < 50) {
           item.quality = item.quality + 1;
         }
+      }
+
+      if (item.name.equals(BRIE)) {
+        if (item.sellIn < 0) {
+          if (item.quality < 50) {
+            item.quality = item.quality + 1;
+          }
+        }
+      }
+
+      if (item.name.equals(BRIE)) {
+        item.sellIn = item.sellIn - 1;
       }
 
       if (item.name.equals(PASS)) {
@@ -44,12 +52,14 @@ class GildedRose {
         }
       }
 
-      if (item.name.equals(BRIE)) {
+      if (item.name.equals(PASS)) {
         item.sellIn = item.sellIn - 1;
       }
 
       if (item.name.equals(PASS)) {
-        item.sellIn = item.sellIn - 1;
+        if (item.sellIn < 0) {
+          item.quality = 0;
+        }
       }
 
       if (normalItem(item)) {
@@ -64,19 +74,12 @@ class GildedRose {
         }
       }
 
-      if (item.name.equals(PASS)) {
-        if (item.sellIn < 0) {
-          item.quality = 0;
+      if (normalItem(item)) {
+        if (item.quality > 0) {
+          item.quality = item.quality - 1;
         }
-      }
-       
-      if (item.name.equals(BRIE)) {
-        if (item.sellIn < 0) {
-          if (item.quality < 50) {
-            item.quality = item.quality + 1;
-          }
-        }
-      }
+      } 
+      
     }
   }
 
