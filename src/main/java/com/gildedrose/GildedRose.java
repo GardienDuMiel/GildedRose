@@ -57,8 +57,8 @@ class GildedRose {
               }
             }
           } 
-          
-          if (!(!item.name.equals(PASS))) {
+
+          if (item.name.equals(PASS)) {
             item.quality = 0;
           }
         } else {
