@@ -44,10 +44,18 @@ class GildedRose {
         }
       }
 
-      if (!item.name.equals(SULFURAS)) {
+      if (item.name.equals(BRIE)) {
         item.sellIn = item.sellIn - 1;
       }
 
+      if (item.name.equals(PASS)) {
+        item.sellIn = item.sellIn - 1;
+      }
+
+      if (normalItem(item)) {
+        item.sellIn = item.sellIn - 1;
+      }
+      
       if (normalItem(item)) {
         if (item.sellIn < 0) {
           if (item.quality > 0) {
