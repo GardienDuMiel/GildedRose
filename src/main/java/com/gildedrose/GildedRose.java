@@ -61,7 +61,7 @@ class GildedRose {
           }
         } 
         
-        if (!(!item.name.equals(BRIE))) {
+        if (item.name.equals(BRIE)) {
           if (item.quality < 50) {
             item.quality = item.quality + 1;
           }
