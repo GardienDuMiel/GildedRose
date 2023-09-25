@@ -49,7 +49,7 @@ class GildedRose {
       }
 
       if (item.sellIn < 0) {
-        if (!item.name.equals(BRIE) && !item.name.equals(PASS) && !item.name.equals(SULFURAS)) {
+        if (normalItem(item)) {
           if (item.quality > 0) {
             item.quality = item.quality - 1;
           }
