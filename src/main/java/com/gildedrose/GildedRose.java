@@ -14,7 +14,7 @@ class GildedRose {
 
   public void updateQuality() {
     for (Item item : items) {
-      if (!item.name.equals(BRIE) && !item.name.equals(PASS) && !item.name.equals(SULFURAS)) { 
+      if (normalItem(item)) {
         if (item.quality > 0) {
           item.quality = item.quality - 1;
         }
@@ -62,5 +62,9 @@ class GildedRose {
         }
       }
     }
+  }
+
+  private boolean normalItem(Item item) {
+    return !item.name.equals(BRIE) && !item.name.equals(PASS) && !item.name.equals(SULFURAS);
   }
 }
